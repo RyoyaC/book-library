@@ -5,11 +5,8 @@ export default function Header() {
     <div className="navbar bg-blue-300">
       <div className="navbar-start">
         <a href="/">
-          <div className="site-top flex">
-            {/* ロゴおよびサイト名は変更予定 */}
-            <div className="logo px-2">LOGO</div>
-            <div className="site-name">bookshelf</div>
-          </div>
+          {/* ロゴおよびサイト名は変更予定 */}
+          <div className="logo px-6 px-2">LOGO bookshelf</div>
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
