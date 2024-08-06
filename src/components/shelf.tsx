@@ -1,6 +1,7 @@
 import React from "react";
 import BookCard, { Book, BookCardProps } from "./bookCard";
 import BookShelf from "../app/books/page";
+import BookCardComponent from "./bookCard";
 
 export const bookList: Book[] = [
   {
@@ -49,7 +50,7 @@ export type ShelfBooks = {
   shelfInfo: Shelf;
 };
 
-export default function Shelf(props: ShelfBooks) {
+export default function ShelfComponent(props: ShelfBooks) {
   return (
     <div className="card card-compact card-bordered w-5/6 bg-white">
       {/* Bookのリストで複数の書籍を表示する */}
@@ -60,7 +61,7 @@ export default function Shelf(props: ShelfBooks) {
             // ISBNでは一意にならない可能性があるので、別のキーを検討する
             // 反例：同じ書籍を複数保有する場合
             <React.Fragment key={book.isbn}>
-              <BookCard {...book} />
+              <BookCardComponent {...book} />
             </React.Fragment>
           ))}
         </div>

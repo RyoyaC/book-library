@@ -20,7 +20,7 @@ const bookData: BookCardProps = {
   image: "https://www.seshop.com/static/images/product/26334/L.png",
 };
 
-export default function BookCard(props: BookCardProps) {
+export default function BookCardComponent(props: BookCardProps) {
   return (
     <div className="card card-compact bg-base-100 w-48 shadow-wl card-bordered">
       <figure>

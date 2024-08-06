@@ -1,3 +1,4 @@
+import BookShelfComponent from "@/components/bookShelf";
 import Shelf, { bookList } from "@/components/shelf";
 import React from "react";
 
@@ -11,8 +12,8 @@ export const shelfBooks = {
 };
 export default function BookShelf() {
   return (
-    <div className="flex justify-center my-8">
-      <Shelf {...shelfBooks} />
+    <div className="flex place-content-center py-8">
+      <BookShelfComponent />
     </div>
   );
 }
