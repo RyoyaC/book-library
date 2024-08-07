@@ -1,26 +1,7 @@
+import { Book } from "@/types/bookTypes";
 import React from "react";
 
-export type BookCardProps = {
-  isbn: string;
-  title: string;
-  image: string;
-};
-
-export type Book = {
-  isbn: string;
-  title: string;
-  image: string;
-  author: string[];
-  publishedAt: Date;
-};
-
-const bookData: BookCardProps = {
-  isbn: "9784798184777",
-  title: "アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築",
-  image: "https://www.seshop.com/static/images/product/26334/L.png",
-};
-
-export default function BookCardComponent(props: BookCardProps) {
+export default function BookCardComponent(props: Book) {
   return (
     <div className="card card-compact bg-base-100 w-48 shadow-wl card-bordered">
       <figure>

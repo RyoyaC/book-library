@@ -1,58 +1,10 @@
 import React from "react";
-import BookCard, { Book, BookCardProps } from "./bookCard";
-import BookShelf from "../app/books/page";
 import BookCardComponent from "./bookCard";
-
-export const bookList: Book[] = [
-  {
-    isbn: "9784798184777",
-    title: "アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築",
-    image: "https://www.seshop.com/static/images/product/26334/L.png",
-    author: ["米久保 剛"],
-    publishedAt: new Date(2024, 7, 22),
-  },
-  {
-    isbn: "9784798184777",
-    title: "アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築2",
-    image: "https://www.seshop.com/static/images/product/26334/L.png",
-    author: ["米久保 剛"],
-    publishedAt: new Date(2024, 7, 22),
-  },
-  {
-    isbn: "9784798184777",
-    title: "アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築3",
-    image: "https://www.seshop.com/static/images/product/26334/L.png",
-    author: ["米久保 剛"],
-    publishedAt: new Date(2024, 7, 22),
-  },
-  {
-    isbn: "9784798184777",
-    title: "アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築3",
-    image: "https://www.seshop.com/static/images/product/26334/L.png",
-    author: ["米久保 剛"],
-    publishedAt: new Date(2024, 7, 22),
-  },
-  {
-    isbn: "9784798184777",
-    title: "アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築3",
-    image: "https://www.seshop.com/static/images/product/26334/L.png",
-    author: ["米久保 剛"],
-    publishedAt: new Date(2024, 7, 22),
-  },
-];
-export type Shelf = {
-  id: string;
-  name: string;
-  location: string;
-};
-export type ShelfBooks = {
-  bookList: Book[];
-  shelfInfo: Shelf;
-};
+import { Book, ShelfBooks } from "@/types/bookTypes";
 
 export default function ShelfComponent(props: ShelfBooks) {
   return (
-    <div className="card card-compact card-bordered w-5/6 bg-white">
+    <div className="card card-compact card-bordered bg-white">
       {/* Bookのリストで複数の書籍を表示する */}
       <div className="card-body">
         <div className="card-title">{props.shelfInfo.name}</div>
