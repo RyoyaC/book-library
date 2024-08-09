@@ -1,6 +1,7 @@
 import React from "react";
 import BookCardComponent from "./bookCard";
 import { Book, ShelfBooks } from "@/types/bookTypes";
+import Link from "next/link";
 
 export default function ShelfComponent(props: ShelfBooks) {
   return (
@@ -13,7 +14,9 @@ export default function ShelfComponent(props: ShelfBooks) {
             // ISBNでは一意にならない可能性があるので、別のキーを検討する
             // 反例：同じ書籍を複数保有する場合
             <React.Fragment key={book.isbn}>
-              <BookCardComponent {...book} />
+              <Link href={{ pathname: "/books/" + book.isbn }}>
+                <BookCardComponent {...book} />
+              </Link>
             </React.Fragment>
           ))}
         </div>
