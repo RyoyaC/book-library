@@ -1,6 +1,6 @@
 import React from "react";
 import ShelfComponent from "./shelf";
-import { ShelfBooks } from "@/types/bookTypes";
+import { ShelfBooks, ShelfInfo } from "@/types/bookTypes";
 import AddButtonComponent from "./addButton";
 
 export type BookShelfProps = {

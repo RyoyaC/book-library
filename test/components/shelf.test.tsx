@@ -2,7 +2,6 @@ import BookCardComponent from "@/components/bookCard";
 import ShelfComponent from "@/components/shelf";
 import { ShelfBooks } from "@/types/bookTypes";
 import { render, screen } from "@testing-library/react";
-import { describe, it } from "node:test";
 
 describe("Shelfコンポーネントのテスト", () => {
   describe("正しい情報を表示する", () => {

@@ -6,7 +6,7 @@ export type Book = {
   publishedAt: Date;
 };
 
-export type Shelf = {
+export type ShelfInfo = {
   id: string;
   name: string;
   location: string;
@@ -14,7 +14,7 @@ export type Shelf = {
 
 export type ShelfBooks = {
   bookList: Book[];
-  shelfInfo: Shelf;
+  shelfInfo: ShelfInfo;
 };
 
 export type BookShelf = ShelfBooks[];
