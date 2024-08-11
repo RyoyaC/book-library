@@ -3,7 +3,7 @@ import React from "react";
 export default function Page() {
   return (
     <div className="py-20 flex justify-center">
-      <div className="card card-bordered bg-white w-full max-w-md">
+      <div className="card card-bordered bg-white shadow-lg w-full max-w-md">
         <div className="card-title flex justify-center mt-4">
           <p className="font-bold">Login</p>
         </div>
