@@ -21,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
+        {/* TODO: 背景の一番下まで色がつかないため、CSSを調整する必要あり */}
         <div className={styles.bggray}>
           <Container>{children}</Container>
         </div>
