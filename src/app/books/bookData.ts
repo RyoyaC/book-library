@@ -65,3 +65,11 @@ export const bookShelf = [
     },
   },
 ];
+
+export const bookData = {
+  isbn: "9784798184777",
+  title: "アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築",
+  image: "https://www.seshop.com/static/images/product/26334/L.png",
+  author: ["米久保 剛"],
+  publishedAt: new Date(2024, 7, 22),
+};
