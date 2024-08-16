@@ -1,27 +1,28 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Header() {
   return (
     <div className="navbar bg-blue-300">
       <div className="navbar-start">
-        <a href="/">
+        <Link href={{ pathname: "/" }}>
           {/* ロゴおよびサイト名は変更予定 */}
           <div className="logo px-6 px-2">LOGO bookshelf</div>
-        </a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul tabIndex={0} className="menu menu-horizontal px-1">
           <li className="nav-item">
-            <a>Item1</a>
+            <Link href={{ pathname: "/" }}>ホーム</Link>
           </li>
           <li className="nav-item">
-            <a>Item2</a>
+            <Link href={{ pathname: "/books" }}>本棚</Link>
           </li>
           <li className="nav-item">
-            <a>Item3</a>
+            <a>棚</a>
           </li>
           <li className="nav-item">
-            <a>Item4</a>
+            <a>使い方</a>
           </li>
         </ul>
       </div>

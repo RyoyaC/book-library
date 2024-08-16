@@ -10,6 +10,7 @@ describe("正しい情報を表示する", () => {
       title: "アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築",
       image: "https://www.seshop.com/static/images/product/26334/L.png",
       author: ["米久保 剛"],
+      publisher: "翔泳社",
       publishedAt: new Date(2024, 7, 22),
     };
 
