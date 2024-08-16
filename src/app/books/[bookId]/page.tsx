@@ -4,7 +4,7 @@ import { bookData } from "../bookData";
 
 export default function Page() {
   return (
-    <div>
+    <div className="py-10">
       <BookDetailCardComponent {...bookData} />
     </div>
   );

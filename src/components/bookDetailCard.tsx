@@ -1,7 +1,7 @@
-import { Book } from "@/types/bookTypes";
+import { OwnedBook } from "@/types/bookTypes";
 import React from "react";
 
-export default function BookDetailCardComponent(props: Book) {
+export default function BookDetailCardComponent(props: OwnedBook) {
   return (
     <div>
       <div className="card card-bordered p-4 bg-white">
@@ -22,7 +22,7 @@ export default function BookDetailCardComponent(props: Book) {
               </div>
               <div className="flex mb-2">
                 <div className="w-1/2 text-sm text-gray-500">
-                  出版社: Publisher
+                  出版社: {props.publisher}
                 </div>
                 <div className="w-1/2 text-sm text-gray-500 text-right">
                   出版年月日: {props.publishedAt.toLocaleDateString()}
@@ -34,9 +34,13 @@ export default function BookDetailCardComponent(props: Book) {
           <div className="mt-6 border-t pt-4">
             <div className="flex mb-2">
               <div className="w-1/4 text-sm text-gray-500">Location</div>
-              <div className="w-3/4 text-sm text-gray-500 pl-4">ShelfName</div>
+              <div className="w-3/4 text-sm text-gray-500 pl-4">
+                {props.location.name}
+              </div>
             </div>
-            <div className="text-sm text-gray-500">Description</div>
+            <div className="text-sm text-gray-500">
+              {props.location.description}
+            </div>
           </div>
         </div>
       </div>

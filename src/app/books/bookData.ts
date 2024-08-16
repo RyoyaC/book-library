@@ -7,6 +7,7 @@ export const bookList: Book[] = [
     title: "アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築",
     image: "https://www.seshop.com/static/images/product/26334/L.png",
     author: ["米久保 剛"],
+    publisher: "翔泳社",
     publishedAt: new Date(2024, 7, 22),
   },
   {
@@ -14,6 +15,7 @@ export const bookList: Book[] = [
     title: "アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築2",
     image: "https://www.seshop.com/static/images/product/26334/L.png",
     author: ["米久保 剛"],
+    publisher: "翔泳社",
     publishedAt: new Date(2024, 7, 22),
   },
   {
@@ -21,6 +23,7 @@ export const bookList: Book[] = [
     title: "アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築3",
     image: "https://www.seshop.com/static/images/product/26334/L.png",
     author: ["米久保 剛"],
+    publisher: "翔泳社",
     publishedAt: new Date(2024, 7, 22),
   },
   {
@@ -28,6 +31,7 @@ export const bookList: Book[] = [
     title: "アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築3",
     image: "https://www.seshop.com/static/images/product/26334/L.png",
     author: ["米久保 剛"],
+    publisher: "翔泳社",
     publishedAt: new Date(2024, 7, 22),
   },
   {
@@ -35,6 +39,7 @@ export const bookList: Book[] = [
     title: "アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築3",
     image: "https://www.seshop.com/static/images/product/26334/L.png",
     author: ["米久保 剛"],
+    publisher: "翔泳社",
     publishedAt: new Date(2024, 7, 22),
   },
 ];
@@ -71,5 +76,11 @@ export const bookData = {
   title: "アーキテクトの教科書 価値を生むソフトウェアのアーキテクチャ構築",
   image: "https://www.seshop.com/static/images/product/26334/L.png",
   author: ["米久保 剛"],
+  publisher: "翔泳社",
   publishedAt: new Date(2024, 7, 22),
+  location: {
+    shelfId: "shelf1",
+    name: "棚1",
+    description: "右本棚の上",
+  },
 };
